@@ -7,13 +7,13 @@ btn.id = "btnToClick";
 btn.appendChild(document.createTextNode("Imprime evento!"));
 btn.addEventListener("click", printEvent);
 document.body.appendChild(btn);
-// 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
+// 1.2
 function PrintValue(event) {
   console.log(event.target.value);
 }
 let focusIn = document.querySelector(".focus");
 focusIn.addEventListener("focus", PrintValue);
-// 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
+// 1.3
 function getInput(event) {
   console.log(event.target.value);
 }
